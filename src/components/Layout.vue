@@ -19,7 +19,6 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  border: 1px solid red;
 }
 .content {
   overflow: auto;
