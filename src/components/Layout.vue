@@ -1,0 +1,28 @@
+<template>
+  <div class="nav-wrapper">
+    <div class="content">
+      <slot />
+    </div>
+    <Nav />
+  </div>
+</template>
+
+<script lang="ts">
+export default {
+  name: "Layout",
+  props:["name"]
+};
+</script>
+
+<style lang="scss" scoped>
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 1px solid red;
+}
+.content {
+  overflow: auto;
+  flex-grow: 1;
+}
+</style>
