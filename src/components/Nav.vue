@@ -4,19 +4,19 @@
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-biaoqian"></use>
       </svg>
-      <router-link to="/statistics">标签</router-link>
+      <router-link to="/statistics" active-class="selected" >标签</router-link>
     </div>
     <div>
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-jizhang"></use>
       </svg>
-      <router-link to="/money" class="item">记一笔</router-link>
+      <router-link to="/money" class="item" active-class="selected">记一笔</router-link>
     </div>
     <div>
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-tongjifenxi-xiangmubiaogetongji"></use>
       </svg>
-      <router-link to="/labels" class="item">统计</router-link>
+      <router-link to="/labels" class="item" active-class="selected">统计</router-link>
     </div>
   </nav>
 </template>
@@ -45,6 +45,12 @@ export default {
      justify-content: center;
      align-items: center;
      flex: 1;
+     .selected {
+       font-size: 14px;
+       font-weight: bold;
+       color: orange;
+     }
+
    }
  }
 </style>

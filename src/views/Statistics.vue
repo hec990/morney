@@ -2,7 +2,7 @@
  <div>
    <Layout>
      Statistics.vue
-   </Layout>>
+   </Layout>
  </div>
 </template>
 
