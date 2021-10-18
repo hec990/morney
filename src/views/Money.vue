@@ -1,5 +1,5 @@
 <template>
-    <Layout class-prefix="layout">
+    <Layout>
       <Tags :data-source.sync="tags"/>
       <Notes/>
       <Types/>
@@ -7,7 +7,7 @@
     </Layout>
 </template>
 
-<script lang="ts">
+<script>
 import NumberPad from "@/components/money/NumberPad.vue";
 import Tags from "@/components/money/Tags.vue";
 import Types from "@/components/money/Types.vue";
