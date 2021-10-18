@@ -4,12 +4,28 @@
       <button>新增标签</button>
     </div>
     <ul class="current">
-
+      <li>衣</li>
+      <li>食</li>
+      <li>住</li>
+      <li>行</li>
+      <li>衣</li>
+      <li>食</li>
+      <li>住</li>
+      <li>行</li>
+      <li>衣</li>
+      <li>食</li>
+      <li>住</li>
+      <li>行</li>
+      <li>衣</li>
+      <li>食</li>
+      <li>住</li>
+      <li>行</li>
     </ul>
   </div>
 </template>
 
 <script lang="ts">
+
 </script>
 
 <style lang="scss" scoped>
