@@ -1,3 +1,4 @@
+<!-- 支出收入组件-->
 <template>
   <div>
     <ul class="types">
