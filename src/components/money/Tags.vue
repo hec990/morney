@@ -1,0 +1,53 @@
+<template>
+  <div class="tags">
+    <div class="new">
+      <button>新增标签</button>
+    </div>
+    <ul class="current">
+
+    </ul>
+  </div>
+</template>
+
+<script lang="ts">
+</script>
+
+<style lang="scss" scoped>
+.tags {
+  height: 231px;
+  font-size: 14px;
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  > .current {
+    display: flex;
+    flex-wrap: wrap;
+    > li {
+      $bg: #d9d9d9;
+      background: $bg;
+      $h: 24px;
+      height: $h;
+      line-height: $h;
+      border-radius: $h/2;
+      padding: 0 16px;
+      margin-right: 12px;
+      margin-top: 4px;
+      &.selected {
+        background: darken($bg, 50%);
+        color: white;
+      }
+    }
+  }
+  > .new {
+    padding-top: 16px;
+    button {
+      background: transparent;
+      border: none;
+      color: #999;
+      border-bottom: 1px solid;
+      padding: 0 4px;
+    }
+  }
+}
+</style>

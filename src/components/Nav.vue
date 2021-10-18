@@ -46,7 +46,6 @@ export default {
      align-items: center;
      flex: 1;
      .selected {
-       font-size: 14px;
        font-weight: bold;
        color: orange;
      }
