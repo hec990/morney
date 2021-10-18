@@ -17,7 +17,7 @@ export default {
   components: {Notes, Types, Tags, NumberPad},
   data() {
     return {
-      tags: ['衣', '食', '住', '行', '彩票']
+      tags: ['衣', '食', '住', '行']
     }
   }
 };
