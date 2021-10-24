@@ -22,7 +22,7 @@ import {Component,Prop} from "vue-property-decorator";
 export default class Tags extends Vue {
  // 接收外部传来的值
  @Prop() dataSource: string[] | undefined;
-  // 是否选中
+  // 是否选中,一个标签或者多个标签
   selectedTags: string[] = [];
 
   // 开关
@@ -33,6 +33,7 @@ export default class Tags extends Vue {
     } else {
       this.selectedTags.push(tag);
     }
+    this.$emit('update:value',this.selectedTags)
   }
 
   newTab(){
