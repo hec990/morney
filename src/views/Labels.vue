@@ -3,6 +3,9 @@
     <ol class="tags">
       <li v-for="tag in tags" :key="tag.id">
         <span>{{ tag.name }}</span>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-right"></use>
+        </svg>
       </li>
     </ol>
     <div class="createTag-wrapper">
@@ -50,8 +53,8 @@ export default class Labels extends Vue {
     padding: 10px;
 
     > svg {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
