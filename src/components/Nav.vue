@@ -4,7 +4,7 @@
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-biaoqian"></use>
       </svg>
-      <router-link to="/statistics" active-class="selected" >标签</router-link>
+      <router-link to="/labels" active-class="selected" >标签</router-link>
     </div>
     <div>
       <svg class="icon" aria-hidden="true">
@@ -16,7 +16,7 @@
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-tongjifenxi-xiangmubiaogetongji"></use>
       </svg>
-      <router-link to="/labels" class="item" active-class="selected">统计</router-link>
+      <router-link to="/statistics" class="item" active-class="selected">统计</router-link>
     </div>
   </nav>
 </template>
