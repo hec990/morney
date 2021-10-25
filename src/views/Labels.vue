@@ -68,8 +68,6 @@ export default class Labels extends Vue {
   border: none;
   height: 40px;
   padding: 0 16px;
-  font-size: 16px;
-
   &-wrapper {
     text-align: center;
     padding: 16px;

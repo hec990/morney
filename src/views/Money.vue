@@ -1,7 +1,7 @@
 <template>
     <Layout>
       <Tags :data-source.sync="tags" @update:value="onupdateTags"/>
-      <Notes field-name="备注"
+      <FormItem field-name="备注"
              placeholder="在这里输入备注"
              @update:value="onupdateNotes"
       />
@@ -15,17 +15,17 @@ import Vue from "vue";
 import NumberPad from "@/components/money/NumberPad.vue";
 import Tags from "@/components/money/Tags.vue";
 import Types from "@/components/money/Types.vue";
-import Notes from "@/components/money/Notes.vue";
 import {Component,Watch} from "vue-property-decorator";
 import recordListModel from '@/models/recordListModel.ts';
 import tagListModel from "@/models/tagListModel";
+import FormItem from "@/components/money/FormItem.vue";
 const recordList = recordListModel.fetch();
 const tagList = tagListModel.fetch();
 
 
 
 @Component({
-  components: {Notes, Types, Tags, NumberPad},
+  components: {FormItem,  Types, Tags, NumberPad},
 })
 
 export default class Money extends Vue {
