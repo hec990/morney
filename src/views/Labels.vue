@@ -5,6 +5,9 @@
                    v-for="tag in tags" :key="tag.id"
                    :to="`/labels/edit/${tag.id}`">
         <span>{{tag.name}}</span>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-right"></use>
+        </svg>
       </router-link>
     </div>
     <div class="createTag-wrapper">
